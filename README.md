@@ -38,7 +38,7 @@
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/your-username/IoT_Security_Checker.git
+git clone https://github.com/Money-zhang/IoT_Security_Checker.git
 cd IoT_Security_Checker
 
 # 2. 赋予执行权限
