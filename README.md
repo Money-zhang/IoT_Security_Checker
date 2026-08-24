@@ -28,6 +28,21 @@
 
 脚本运行后会生成两种格式的报告：
 
-- **终端输出**：带颜色的实时结果
-- **HTML 报告**：结构化表格展示，适合面试展示
-- **TXT 报告**：纯文本备份，便于存档
+- **终端输出**：带颜色的实时结果(./images/terminal_output.png)
+- **HTML 报告**：结构化表格展示(./images/html_report.png)
+- **TXT 报告**：纯文本备份，便于存档(./images/txt_report.png)
+
+---
+
+## 🚀 快速开始
+
+```bash
+# 1. 克隆仓库
+git clone https://github.com/your-username/IoT_Security_Checker.git
+cd IoT_Security_Checker
+
+# 2. 赋予执行权限
+chmod +x iot_check.sh
+
+# 3. 运行脚本
+./iot_check.sh
