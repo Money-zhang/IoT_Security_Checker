@@ -22,7 +22,7 @@
 - **终端输出**：带颜色的实时结果  
   ![终端输出](./images/terminal_output.png)
 
-- **HTML 报告**：结构化表格展示，适合面试展示  
+- **HTML 报告**：结构化表格展示  
   ![HTML报告](./images/html_report.png)
 
 - **TXT 报告**：纯文本备份，便于存档  
