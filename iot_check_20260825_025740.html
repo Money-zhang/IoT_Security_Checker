@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>物联网安全基线检查报告</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 40px; background-color: #f8f9fa; }
+h1 { color: #333; }
+.container { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+th { background-color: #007bff; color: white; padding: 12px; text-align: left; }
+td { padding: 10px; border: 1px solid #ddd; }
+.pass { background-color: #d4edda; }
+.fail { background-color: #f8d7da; }
+.warn { background-color: #fff3cd; }
+.summary { margin-top: 20px; padding: 15px; background-color: #e9ecef; border-radius: 6px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🔒 物联网安全基线检查报告</h1>
+<p><strong>检查时间：</strong> 2026-08-25 02:57:40</p>
+<table>
+<tr><th>状态</th><th>检查结果</th></tr>
+<tr style='background-color:#d4edda;'><td>[PASS]</td><td>端口 21 未开放（安全）</td></tr>
+<tr style='background-color:#d4edda;'><td>[PASS]</td><td>端口 22 已开放</td></tr>
+<tr style='background-color:#d4edda;'><td>[PASS]</td><td>端口 23 未开放（安全）</td></tr>
+<tr style='background-color:#d4edda;'><td>[PASS]</td><td>端口 80 未开放（安全）</td></tr>
+<tr style='background-color:#d4edda;'><td>[PASS]</td><td>端口 443 未开放（安全）</td></tr>
+<tr style='background-color:#d4edda;'><td>[PASS]</td><td>端口 1883 未开放（安全）</td></tr>
+<tr style='background-color:#d4edda;'><td>[PASS]</td><td>端口 3306 已开放</td></tr>
+<tr style='background-color:#fff3cd;'><td>[WARN]</td><td>MQTT 明文端口1883可连接，但TLS加密端口8883不可用，建议启用加密</td></tr>
+<tr style='background-color:#fff3cd;'><td>[WARN]</td><td>MQTT未显式定义allow_anonymous，旧版本默认允许匿名访问</td></tr>
+<tr style='background-color:#fff3cd;'><td>[WARN]</td><td>MQTT未完整配置TLS加密通信，明文传输存在数据劫持风险</td></tr>
+<tr style='background-color:#fff3cd;'><td>[WARN]</td><td>MQTT未配置password_file，无独立账号认证机制</td></tr>
+<tr style='background-color:#fff3cd;'><td>[WARN]</td><td>MQTT未配置ACL，设备间存在Topic越权订阅/发布风险</td></tr>
+<tr style='background-color:#fff3cd;'><td>[WARN]</td><td>默认账户 root 存在</td></tr>
+<tr style='background-color:#f8d7da;'><td>[FAIL]</td><td>SSH允许root 登录（不安全）</td></tr>
+<tr style='background-color:#d4edda;'><td>[PASS]</td><td>高危服务 telnet 未运行</td></tr>
+<tr style='background-color:#d4edda;'><td>[PASS]</td><td>高危服务 ftp 未运行</td></tr>
+<tr style='background-color:#d4edda;'><td>[PASS]</td><td>高危服务 rlogin 未运行</td></tr>
+<tr style='background-color:#d4edda;'><td>[PASS]</td><td>高危服务 rexec 未运行</td></tr>
+<tr style='background-color:#d4edda;'><td>[PASS]</td><td>登录失败记录正常 (0 条)</td></tr>
+<tr style='background-color:#d4edda;'><td>[PASS]</td><td>root密码已修改（距离上次修改约 384 天）</td></tr>
+</table>
+<div class="summary">
+<strong>综合评分：</strong> ✅ PASS=13  ❌ FAIL=1  ⚠️ WARN=6
+</div>
+<p><small>报告文件：iot_check_20260825_025740.txt</small></p>
+</div>
+</body>
+</html>
