@@ -19,9 +19,14 @@
 
 ## 输出
 
-- 终端输出：带颜色的实时检查结果
-- TXT 报告：纯文本格式，适合存档
-- HTML 报告：表格化展示，适合面试和汇报展示
+- **终端输出**：带颜色的实时结果  
+  ![终端输出](./images/terminal_output.png)
+
+- **HTML 报告**：结构化表格展示，适合面试展示  
+  ![HTML报告](./images/html_report.png)
+
+- **TXT 报告**：纯文本备份，便于存档  
+  ![TXT报告](./images/txt_report.png)
 
 ## 使用方法
 
